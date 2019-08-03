@@ -1,0 +1,61 @@
+﻿@using System.Data;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Assignment one";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="bs-docs-section">
+        <div class="container">
+            <div class="page-header">
+                <h1 id="tables">List of guest. (Using ADO)</h1>
+            </div>
+
+            <div class="bs-component table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tbody>
+                        @if (Model.Rows.Count > 0)
+                        {
+                            foreach (DataRow dr in Model.Rows)
+                            {
+                        <tr>
+                            <td>@dr["Name"].ToString()</td>
+                            <td>@dr["Email"].ToString()</td>
+                            <td>@dr["Phone"].ToString()</td>
+                            @if (dr["WillAttend"].Equals(true))
+                            {
+                                <td class="table-success">Yes</td>
+                            }
+                            else
+                            {
+                                <td class="table-danger">No</td>
+
+                            }
+
+                        </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<AnkitSinghAssignments.Models.GuestList>
+@using AnkitSinghAssignments.Models;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Assignment Two";
+
+}
+
+@section featured
+    {
+    <div class="bs-docs-section">
+        <div class="container">
+            <div class="page-header">
+                <h1 id="tables">List of guest.</h1>
+            </div>
+
+            <div class="bs-component table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>WillAttend</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (GuestList guest in Model)
+                        {
+                        <tr>
+                            <td>@guest.Name</td>
+                            <td>@guest.Email</td>
+                            <td>@guest.Phone</td>
+                            @if (guest.WillAttend == true)
+                            {
+                                <td class="table-success">Yes</td>
+                            }
+                            else
+                            {
+                                <td class="table-danger">No</td>
+
+                            }
+                                <td>@Html.ActionLink("View", "Guestshow", new { id = guest.GueastId }, new { @class = "btn btn-primary" })</td>
+
+                        </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}

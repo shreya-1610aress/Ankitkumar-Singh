@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Assignment one";
+
+}
+
+@section featured
+    {
+    <div class="container">
+        <div class="jumbotron header-message text-center">
+            <div class="container" id="mainContent">
+                <img src="~/Assets/images/user-welcome.png" width="150" height="120" />
+                <h1 class="display-3">Welcome Friends !</h1>
+                <h3 class="lead"><strong>We're going to have an exciting party.</strong><br/> <br/></h3>
+                <div class="btn btn-white btn-lg">@Html.ActionLink("Confirm your avaibility", "RsvpForm")</div>
+            </div>
+        </div>
+    </div>
+}
