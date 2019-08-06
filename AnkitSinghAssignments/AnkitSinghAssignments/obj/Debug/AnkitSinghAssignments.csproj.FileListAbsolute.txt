@@ -51,3 +51,6 @@ D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\AnkitSinghAssig
 D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\AnkitSinghAssignments\bin\EntityFramework.SqlServer.dll
 D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\AnkitSinghAssignments\bin\EntityFramework.xml
 D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\AnkitSinghAssignments\bin\EntityFramework.SqlServer.xml
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\AnkitSinghAssignments\bin\BusinessLayer.dll
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\AnkitSinghAssignments\bin\BusinessLayer.pdb
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\AnkitSinghAssignments\bin\BusinessLayer.dll.config

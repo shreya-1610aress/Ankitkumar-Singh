@@ -1,14 +1,14 @@
-﻿using System;
-using System.Web.Mvc;
-using System.Net;
+﻿using AnkitSinghAssignments.Models;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Net.Mail;
-using AnkitSinghAssignments.Models;
+using System.Web.Mvc;
 
 namespace AnkitSinghAssignments.Controllers
 {
     public class Assignment1Controller : Controller
     {
-        // GET: Assignment1 View.
+        // View Page call.
         public ViewResult Index()
         {
             return View();
@@ -19,30 +19,45 @@ namespace AnkitSinghAssignments.Controllers
         {
             return View();
         }
+
+        //Post form data to database and sent mail to the user.
         [HttpPost]
         public ViewResult RsvpForm(GuestResponse guestResponse)
         {
             if (ModelState.IsValid)
             {
-                //TODO: Email response to the party organizer
-                //SmtpClient smtpClient = new SmtpClient();
-                //smtpClient.EnableSsl = true;
+                // Email response to the party organizer
+                SmtpClient smtpClient = new SmtpClient();
+                smtpClient.EnableSsl = true;
 
-                //MailMessage msg = new MailMessage("wcyber23@gmail.com", guestResponse.Email);
-                //msg.Subject = "Hey, welcome.";
-                //msg.Body = "You are invited for the party";
+                MailMessage msg = new MailMessage("wcyber23@gmail.com", guestResponse.Email);
+                msg.Subject = "Hey, welcome.";
+                msg.Body = "You are invited for the party";
+                smtpClient.Send(msg);
 
-                //smtpClient.Send(msg);
-                return View("Thanks", guestResponse);
+                // Insert form data to database.
+                string connectionString = ConfigurationManager.ConnectionStrings["GuestListContext"].ConnectionString;
+
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand("INSERT INTO GuestList(Name, Email, Phone, WillAttend) VALUES(@name, @email, @phone, @willAttend)", con))
+                    {
+                        cmd.Parameters.AddWithValue("@name", guestResponse.Name);
+                        cmd.Parameters.AddWithValue("@email", guestResponse.Email);
+                        cmd.Parameters.AddWithValue("@phone", guestResponse.Phone);
+                        cmd.Parameters.AddWithValue("@willAttend", guestResponse.WillAttend);
+
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        return View("Thanks", guestResponse);
+                    }
+                }           
             }
             else
             {
-                // there is a validation error
+                // To show validation errors.
                 return View();
             }
-
-
-
         }
     }
 }

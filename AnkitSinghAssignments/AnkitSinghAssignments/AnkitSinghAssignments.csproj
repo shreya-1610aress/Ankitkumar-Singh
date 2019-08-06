@@ -127,15 +127,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Assignment1\Index.cshtml" />
     <Content Include="Views\Assignment1\RsvpForm.cshtml" />
     <Content Include="Views\Assignment1\Thanks.cshtml" />
     <Content Include="Views\Assignment2\Index.cshtml" />
-    <Content Include="Views\Assignment3\Index.cshtml" />
     <Content Include="Views\Assignment2\Guestshow.cshtml" />
+    <Content Include="Views\Assignment3\Index.cshtml" />
+    <Content Include="Views\Assignment3\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -148,6 +151,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{441384f5-16f8-461f-b7a0-bf9263f09636}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

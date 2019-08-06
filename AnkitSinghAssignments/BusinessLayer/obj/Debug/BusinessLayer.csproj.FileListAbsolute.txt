@@ -1,0 +1,12 @@
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\bin\Debug\BusinessLayer.dll
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\bin\Debug\EntityFramework.dll
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\bin\Debug\EntityFramework.xml
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.pdb

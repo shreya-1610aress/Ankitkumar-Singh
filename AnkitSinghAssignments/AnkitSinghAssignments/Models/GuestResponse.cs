@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 namespace AnkitSinghAssignments.Models
 {
+    /// <summary> Model class</summary>
     public class GuestResponse
     {
         [Required(ErrorMessage = "Please enter your name")]
@@ -10,7 +11,7 @@ namespace AnkitSinghAssignments.Models
         ErrorMessage = "Please enter a valid email address")]
         public string Email { get; set; }
         [Required(ErrorMessage = "Please enter your phone number")]
-        public string Phone { get; set; }
+        public decimal Phone { get; set; }
         [Required(ErrorMessage = "Please specify whether you'll attend")]
         public bool? WillAttend { get; set; }
     }

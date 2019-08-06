@@ -6,7 +6,7 @@ namespace AnkitSinghAssignments.Controllers
 {
     public class Assignment2Controller : Controller
     {
-        // GET: Assignment2
+        // To show (list) all guest on index view.
         public ActionResult Index()
         {
             GuestListContext guestListContext = new GuestListContext();
@@ -14,10 +14,11 @@ namespace AnkitSinghAssignments.Controllers
             return View(guests);
         }
 
+        //To show specific guest deatils with selected id.
         public ActionResult Guestshow(int id)
         {
             GuestListContext guestListContext = new GuestListContext();
-            GuestList guest = guestListContext.guestList.Single(x => x.GueastId == id);
+            GuestList guest = guestListContext.guestList.Single(x => x.GuestId == id);
             return View(guest);
         }
 
