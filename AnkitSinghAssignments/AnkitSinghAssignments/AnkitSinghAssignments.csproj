@@ -52,6 +52,8 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -110,6 +112,19 @@
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\jquery-3.0.0.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="Models\GuestDataModel.Context.tt">
+      <DependentUpon>GuestDataModel.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GuestDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\GuestDataModel.edmx.diagram">
+      <DependentUpon>GuestDataModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\GuestDataModel.tt">
+      <DependentUpon>GuestDataModel.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GuestDataModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -117,13 +132,32 @@
     <Compile Include="Controllers\Assignment1Controller.cs" />
     <Compile Include="Controllers\Assignment2Controller.cs" />
     <Compile Include="Controllers\Assignment3Controller.cs" />
+    <Compile Include="Controllers\Assignment4Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\GuestList.cs" />
+    <Compile Include="Models\GuestDataModel.Context.cs">
+      <DependentUpon>GuestDataModel.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Models\GuestDataModel.cs">
+      <DependentUpon>GuestDataModel.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Models\GuestDataModel.Designer.cs">
+      <DependentUpon>GuestDataModel.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Models\GuestList.cs">
+      <DependentUpon>GuestDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\GuestListContext.cs" />
-    <Compile Include="Models\GuestResponse.cs" />
     <Compile Include="Models\GuestManagement.cs" />
+    <Compile Include="Models\GuestResponse.cs" />
+    <Compile Include="Models\ListOfGuest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +173,11 @@
     <Content Include="Views\Assignment2\Guestshow.cshtml" />
     <Content Include="Views\Assignment3\Index.cshtml" />
     <Content Include="Views\Assignment3\Edit.cshtml" />
+    <Content Include="Views\Assignment4\Create.cshtml" />
+    <Content Include="Views\Assignment4\Delete.cshtml" />
+    <Content Include="Views\Assignment4\Details.cshtml" />
+    <Content Include="Views\Assignment4\Edit.cshtml" />
+    <Content Include="Views\Assignment4\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -151,12 +190,19 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
       <Project>{441384f5-16f8-461f-b7a0-bf9263f09636}</Project>
       <Name>BusinessLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\GuestDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GuestDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

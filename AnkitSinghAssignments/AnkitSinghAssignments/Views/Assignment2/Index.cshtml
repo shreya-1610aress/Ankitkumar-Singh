@@ -1,4 +1,4 @@
-﻿@model IEnumerable<AnkitSinghAssignments.Models.GuestList>
+﻿@model IEnumerable<AnkitSinghAssignments.Models.ListOfGuest>
 @using AnkitSinghAssignments.Models;
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -27,7 +27,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (GuestList guest in Model)
+                        @foreach (ListOfGuest guest in Model)
                         {
                             <tr>
                                 <td>@guest.Name</td>

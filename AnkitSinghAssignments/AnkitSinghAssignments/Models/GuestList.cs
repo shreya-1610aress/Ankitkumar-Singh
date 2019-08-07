@@ -1,17 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 
 namespace AnkitSinghAssignments.Models
 {
-    /// <summary>Model class</summary>
-    [Table("GuestList")]
-    public class GuestList
+    public partial class GuestList
     {
-        [Key]
         public int GuestId { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public decimal Phone { get; set; }
-        public bool? WillAttend { get; set; }
+        public bool WillAttend { get; set; }
     }
 }
