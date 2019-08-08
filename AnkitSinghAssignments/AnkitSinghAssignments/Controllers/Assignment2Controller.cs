@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Web.Mvc;
 using AnkitSinghAssignments.Models;
+
 namespace AnkitSinghAssignments.Controllers
 {
     public class Assignment2Controller : Controller
@@ -10,7 +11,7 @@ namespace AnkitSinghAssignments.Controllers
         public ActionResult Index()
         {
             GuestListContext guestListContext = new GuestListContext();
-            List <GuestList> guests = guestListContext.guestList.ToList();
+            List <ListOfGuest> guests = guestListContext.ListOfGuest.ToList();
             return View(guests);
         }
 
@@ -18,7 +19,7 @@ namespace AnkitSinghAssignments.Controllers
         public ActionResult Guestshow(int id)
         {
             GuestListContext guestListContext = new GuestListContext();
-            GuestList guest = guestListContext.guestList.Single(x => x.GuestId == id);
+            ListOfGuest guest = guestListContext.ListOfGuest.Single(x => x.GuestId == id);
             return View(guest);
         }
 

@@ -51,6 +51,7 @@
 }
 .bs-component {
     position: relative;
+    margin-top: 50px;
 }
 .border {
     padding: 25px;
