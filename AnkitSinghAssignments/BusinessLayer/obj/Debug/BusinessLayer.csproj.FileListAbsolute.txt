@@ -10,3 +10,15 @@ D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\o
 D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\Ankitkumar-Singh\ASP-MVC\MVC-Assignment\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\user\Documents\GitHub\Ankitkumar-Singh\AnkitSinghAssignments\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+C:\Users\user\Documents\GitHub\Ankitkumar-Singh\AnkitSinghAssignments\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\user\Documents\GitHub\Ankitkumar-Singh\AnkitSinghAssignments\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\user\Documents\GitHub\Ankitkumar-Singh\AnkitSinghAssignments\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\user\Documents\GitHub\Ankitkumar-Singh\AnkitSinghAssignments\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\GitHub\Ankitkumar-Singh\AnkitSinghAssignments\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\user\Documents\GitHub\Ankitkumar-Singh\AnkitSinghAssignments\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\GitHub\Ankitkumar-Singh\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\Ankitkumar-Singh\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Ankitkumar-Singh\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\user\Documents\GitHub\Ankitkumar-Singh\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\user\Documents\GitHub\Ankitkumar-Singh\AnkitSinghAssignments\BusinessLayer\obj\Debug\BusinessLayer.pdb
